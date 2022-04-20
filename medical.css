@@ -1,0 +1,151 @@
+
+.fourth2> .container> .cbutton {
+	text-decoration: none;
+	font-size: 13px;
+	padding: 8px 0;
+	border: 1.5px solid #584ea4;
+	border-radius: 4px;
+	color: #4d3885;
+	outline: 0;
+	display: block;
+	width: 25%;
+	margin: auto;
+	margin-top: 25px;
+	font-family: proximabold;
+	text-align: center;
+}
+.fourth2> .container .card> .s-card:hover {
+	transform: translateY(-30%);
+}
+
+/*----------------fifth section ---------------*/
+
+.fifth3> {
+	grid-area: fourth;
+	
+}
+.fifth3> .four {
+	width: 100%;
+	padding-top: 50%;
+	background: url('images/data.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;	
+}
+.fifth3> .four> .about {
+	padding: 25px 83px 30px 50px;
+	margin: 0;
+	height: 80%;
+	width: 50%;
+	position:absolute;
+	bottom: 2%;
+	right: 0;
+	background: #615b9b;
+	overflow: hidden;
+	color: #ffffff;
+
+}
+.fifth3> .four> .about> h3 {
+	font-size: 40px;
+	text-transform: capitalize;
+	font-family: proximalight;
+	margin-bottom: 5px;
+}
+.fifth3> .four> .about> h6 {
+	font-family: proximabold;
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.fifth3> .four> .about> p {
+	font-family: proximalight;
+	text-align: justify;
+	margin: 30px 0;
+	font-size: 15px;
+}
+/*---------------social ----------------------*/
+.social3> ul,
+  .round3> ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+} 
+ .social3> ul> li, 
+ .round3> ul> li {
+	display: inline;
+}
+.social3> ul {
+	margin-top: 50px;
+} 
+.social3> ul> li {
+	padding-right: 4px;
+} 
+ .social3> ul> li> a{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 4px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	background: transparent;
+	color: #ffffff;
+	text-align: center;
+	outline: 0;
+}
+ 
+ .round3> ul> li{
+	margin: 0 4px;
+}
+ .round3> ul> li> a {
+	display: inline-block;
+	text-decoration: none;
+	width: 13px;
+	height: 13px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	padding: 3px;
+	outline: 0;
+	margin-top: 30px;
+}
+ .round3> ul> li> .set {
+	background: #ffffff;
+}
+
+/*-------------sixth section-------------------*/
+.sixth3 {
+	padding: 100px;
+	background: linear-gradient(to bottom, #ffffff, #f8f9fd);
+	position: relative;
+
+}
+.sixth3> .container> .inform {
+	color: #000000;
+	font-size: 21px;
+	text-align: justify;
+	z-index: 9999;
+}
+.sixth3> .container> .into {
+	text-align: center;
+	text-transform: uppercase;
+	color: #4f5a60;
+	margin-top: 50px;
+}
+.sixth3> .container> .up3,
+.sixth3> .container> .down3 {
+	color: rgba(241,240,246, 0.5);
+	font-size: 400px;
+	padding: 0;
+	margin: 0;
+}
+.sixth3> .container> .up3{
+	position: absolute;
+	top: -15%;
+	left: 21%;
+} 
+.sixth3> .container> .down3{
+	position: absolute;
+	top: 18%;
+	right: 22%;
+}

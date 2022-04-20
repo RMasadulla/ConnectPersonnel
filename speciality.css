@@ -1,0 +1,10 @@
+.first4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	"one4 two4 three4 four4";
+}
+.first4> .set_picture> img {
+	width: 100%;
+	height: 100%;
+}

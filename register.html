@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="US-en">
+<head>
+	<title>REGISTER</title>
+
+	<!-- meta list-->
+	<meta charset="UTF-8">
+	<meta name="keywords" content="help,aid,medical help centre" />
+	<meta name="describtion" content="we are ready to help you" />	
+	<meta name="author" content="Asadulla Ahmed" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+
+	<!-- style sheet -->
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.rtl..min.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="css/normalize8.0.1.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="news_listing.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="telehealth.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="medical.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="register.css" media="all" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico" />
+
+
+	<!-- script --> 
+	<script type="text/javascript" src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+	<script type="text/javascript" src="js/modernizr2.8.3.js"></script>
+
+</head>
+<body>
+	<div class="box">
+		<header>
+			<div class="container">
+				<div class="header">
+					<div class="logo-area"><a href="medical.html"><img src="favicons/medical_logo.png" alt="CONNECT_personnel"></a></div>
+					<div class="header-right">
+						<nav>
+							<ul>
+								<li class="one"><a href="index.html">connect personnel home</a></li>
+								<li class="two"><a href="#second"><span class="file"><img src="favicons/timesheet.png" alt="sheet"></span>timesheets</a></li>
+								<li class="three submenu">
+									<a class="bg" ><span class=" sicon glyphicon glyphicon-search"></span>jobs</a>
+									<!-- ----------------------"drop-down-search bar-start-------------------- -->
+									<form  class= "drop-down-bar" action="" method="GET">
+										<input class="one done" type="search" placeholder="keywords">
+										<div class="custom-arrow">
+											<select class="two done" name="" id="word">
+												<option value="Industry" for="word">Industry</option>
+												<option value="company" for="word">company</option>
+												<option value="ok" for="word">ok</option>
+											</select>
+											<span class="set-pointer"><i class="up glyphicon glyphicon-chevron-up"></i><i class="down glyphicon glyphicon-chevron-down"></i></span>
+										</div>
+										<div class="custom-arrow">
+											<select class="three done" name="" id="word">
+												<option value="Industry" for="word">Location</option>
+												<option value="company" for="word">company</option>
+												<option value="ok" for="word">ok</option>
+										</select>
+											<span class="set-pointer"><i class="up glyphicon glyphicon-chevron-up"></i><i class="down glyphicon glyphicon-chevron-down"></i></span>
+										</div>
+										<input class="four add" type="submit" value="search jobs">
+									</form>
+									<!-- -----------"drop-down-search bar end------- -->
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- -----------------------main start----------------- -->
+
+		<main>
+			<!--nav start------------- -->
+			<nav>
+				<div class="container">
+					<ul class="main-menu-medical">
+						<li><a class="one" href="telehealth.html">connect personnel medical</a></li>
+						<li><a class="two" href="speciality.html">our specialties</a></li>
+						<li><a class="three" href="browse_jobs.html">browse jobs</a></li>
+						<li><a class="four add_color" href="register.html">register & upload cv</a></li>
+						<li><a class="five " href="news_listing.html">news</a></li>
+						<li><a class="six" href="contact.html">contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- first section start here------------ -->
+			<section class="first">
+				<div class="container">
+					<h1>register <span style="text-transform: lowercase;">with</span> <span style="font-family:proximabold;">connect</span></h1>
+				</div>
+			</section>
+
+			<!-- --------------second setion-------------------- -->
+			<section class="second6">
+				<div class="container">
+					<div class="form6">
+						
+						<form action="" method="POST">
+							<div class="one6">
+								<label class="label6" for="fname">first name*</label><br>
+								<input class="full6" type="text" id="fname" name=""> 
+							</div>
+							<div class="two6">
+								<label class="label6" for="lname">last name*</label><br>
+								<input class="full6" type="text" id="lname" name=""> 
+							</div>
+							<div class="three6">
+								<label class="label6" for="phone">phone*</label><br>
+								<input class="full6" type="text" id="phone" name=""> 
+							</div>
+							<div class="four6">
+								<label class="label6" for="email">email*</label><br>
+								<input class="full6" type="email" id="email" name=""> 
+							</div>
+							<div class="five6">
+
+								<label class="label6">upload <span style="text-transform: lowercase;">a</span> resume</label><br>
+								<input style="margin: 10px 0; display: none;" type="file" id="img" name="">
+								<label for="img" class="img_upload"><span class="browse">browse</span><span class=" img-clip fa fa-paperclip"></span>No file Selected</label><br> 
+
+								<label class="label6" for="information">additional information</label><br>
+								<textarea class="full6 set_width" name="" id="information" rows="3"></textarea><br>
+								<span class="check_set"><input class="check6" type="checkbox" id="check" value="done">
+								<label class="label6 confm" for="check">sign <span style="text-transform: lowercase;">up to </span>receive job alerts</label></span>
+							</div>
+							<div class="six6">
+								<input class="full6 extra6" type="search" name="" placeholder="keywords">
+							</div>
+							<div class="seven6">
+								<div class="custom-arrow">
+									<select class="full6 extra6" name="" id="">
+										<option value="">all industries</option> 
+										<option value="">company</option> 
+										<option value="">add company</option>
+									</select>
+									<div class="set-pointer"><span class=" up fa fa-angle-down"></span></div> 
+								</div>
+							</div>
+							<div class="eight6">
+								<div class="custom-arrow">
+									<select class="full6" name="" id="">
+										<option value="">all locations</option> 
+										<option value="">company</option> 
+										<option value="">add company</option>
+									</select>
+									<div class="set-pointer"><span class=" up fa fa-angle-down"></span></div> 
+								</div>
+							</div>
+							<div class="nine6">
+								<div class="custom-arrow">
+									<select class="full6" name="" id="">
+										<option value="">all work types</option> 
+										<option value="">company</option> 
+										<option value="">add company</option>
+									</select>
+									<div class="set-pointer"><span class=" up fa fa-angle-down"></span></div>
+								</div>
+							</div>
+							<div class="ten6">
+								<p class="label6" style="font-size: 12px;">* = required information</p>
+								<hr>
+								<p style="text-align: center;">We respect your privacy. By clicking "Register Now" you agree to our <a href="" style="color: #5f5a9a; font-family: proximaregular; font-weight: bold; text-decoration: none;text-transform: capitalize;">privacy policy</a></p>
+								<input type="submit" name="" value="register">
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+<!-- -------------------------footer------------------ -->
+		<footer>
+			<div class="container">
+				<div class="footer">
+					<div class="left">
+						<a href="#"><img src="favicons/footer_logo.png" alt="connect personnel"></a>
+						<p><span>&copy;</span> copyright 2021 connect personnerl. all rights reserved. <a href="#">your privacy</a></p>
+					</div>
+					<div class="middle">
+						<a href="#"><span class="glyphicon glyphicon-earphone"></span> Call Medical</a> <p>Suite 1A Level 2802 Pacific Highway<br>Gordon NSW 2072</p>
+					</div>
+					<div class="right">
+						 <a href="#"><span class="glyphicon glyphicon-earphone"></span> Call Engneering/Projects/Operations</a>      
+						<p>Kings Row Office Park Building 2 Level 5,<br>50 McDougall Street, Milton, Qld 4064</p>
+						<div class="down">
+							<div class="last">
+								<span>site by secsite</span>
+								<img src="favicons/footer-ring.png" alt="ring">
+							</div>
+							<div class="social">
+								<a href="#" class="icon"><span class="fa fa-linkedin"></span></a>
+								<a href="#" class="icon"><span class="fa fa-facebook"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<!-- script----------- -->
+	<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>

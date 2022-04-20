@@ -1,0 +1,88 @@
+/*-------------------------width 991--------------*/
+@media only screen and (max-width: 1024px) {
+	
+}
+@media only screen and (max-width: 991px) {
+	header {
+		padding: 0;
+	}
+	header> .container> .header> .logo-area {
+		position: absolute;
+		top: 3.5%;
+		left: 5%;
+	}
+	header> .container> .header> .logo-area a img {
+    height: 40px;
+    width: 150px;
+	}
+	header> .container> .header> .header-right> nav> ul> li {
+		visibility: hidden;
+		opacity: 0;
+	}
+	header> .container> .header> .header-right {
+		position: relative;
+	}
+	.search-h{
+		display: flex;
+		position: absolute;
+		top: 3.5%;
+		right: 80px;
+	}
+	.open-nav-menu
+	/*.close-nav-menu*/{
+	  	display: flex;
+	  	position: absolute;
+	  	top: 3.5%;
+	  	right: 3%;
+	 }
+
+}
+/*-------------------------width 768--------------*/
+@media only screen and (max-width: 768px) {
+	
+	
+}/*-------------------------width 768--------------*/
+@media only screen and (max-width: 768px) {
+	
+}/*-------------------------width 320--------------*/
+@media only screen and (max-width: 767px) {
+	/*footer start here---------------*/
+	footer {
+		padding: 25px 0;
+	}
+	footer> .container {
+		width: 97%;
+	}
+	footer> .container> .footer {
+		display: none;
+	}
+	footer> .container> .mobile {
+		text-align: justify;
+		display: block;
+	}
+	footer> .container .social {
+		margin-top: 20px;
+	}
+	footer> .container .left> p {
+		font-size: 14px;
+		margin-top: 6%;
+	}
+	footer> .container .social,
+	footer> .container .middle> a .cnp {
+		display: block;
+		margin-left: 20pt;
+	}
+	footer> .container .middle> a {
+		font-weight: bold;
+		font-size: 15pt;
+		margin: 0;
+	}
+	footer > .container .middle > p {
+		font-size: 17pt;
+		margin-left: 20pt;
+	}
+	footer > .container .last > img {
+		width: 4%;
+		padding-bottom: 3%;
+	}
+}

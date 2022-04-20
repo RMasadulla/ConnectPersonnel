@@ -1,0 +1,32 @@
+.first8 {
+	padding: 20px 0;
+	background: linear-gradient(to right, var(--primary), var(--secondary)), url('Favicons/CONNECT_10.png');    
+	background-position-y:  85%;          
+	background-repeat: no-repeat;
+}
+.first8> .container> h1 {
+	font-family: proximalight;
+	font-size: 66pt;
+	text-transform: capitalize;
+}
+.second8 {
+	padding: 15px 0 40px;
+}
+.second8> .container> .one8> h2 {
+	font-size: 55pt;
+	font-family: proximaregular;
+	text-transform: capitalize;
+}
+.second8> .container> .box8> h4 {
+	font-size: 32pt;
+	font-family: proximabold;
+	text-transform: capitalize;
+}
+.second8> .container> .one8> h2,
+.second8> .container> .box8> h4 {
+	color: #1c173f;
+}
+.second8 p {
+	width: 100%;
+	color: #4e5b61;
+}

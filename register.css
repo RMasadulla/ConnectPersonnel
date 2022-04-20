@@ -1,0 +1,203 @@
+.second6 {
+	padding: 45px 0 65px;
+}
+.second6> .container> .form6 {
+	background-color: #f5f4fc;
+	padding: 40px 80px 30px;
+	border-radius: 2px;
+}
+.second6> .container> .form6> form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"one two "
+	"three four"
+	"five five"
+	"six seven"
+	"eight nine"
+	"ten ten";
+
+}
+.second6> .container> .form6> form> .one6 {
+	grid-area: one;
+} 
+.second6> .container> .form6> form> .two6 {
+	grid-area: two;
+}
+.second6> .container> .form6> form> .three6 {
+	grid-area: three;
+} 
+.second6> .container> .form6> form> .four6 {
+	grid-area: four;
+} 
+.second6> .container> .form6> form> .five6 {
+	grid-area: five;
+}
+.second6> .container> .form6> form> .six6 {
+	grid-area: six;
+}
+.second6> .container> .form6> form> .seven6 {
+	grid-area: seven;
+}
+.second6> .container> .form6> form> .eight6 {
+	grid-area: eight;
+}
+.second6> .container> .form6> form> .nine6 {
+	grid-area: nine;
+}
+.second6> .container> .form6> form> .ten6 {
+	grid-area: ten;
+}
+.second6> .container> .form6> form .label6 {
+	text-transform: capitalize;
+	color: #1a193b;
+	font-family: proximaregular;
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.second6> .container> .form6> form .full6 {
+	width: 95%;
+	background: #ffffff;
+	color: #000000;
+	box-sizing: border-box;
+	padding: 8px 20Px;
+	margin-bottom: 10px;
+	border: 1.5px solid #ebebeb;
+	border-radius: 4px;
+	text-transform: capitalize;
+	font-size: 15px;
+	outline: 0;
+
+}
+.second6> .container> .form6> form .extra6 {
+	margin-bottom: 30px;
+} 
+.second6> .container> .form6> form .set_width {
+	width: 98%;
+	text-transform: none;
+	resize: none;
+	outline: none;
+} 
+.second6> .container> .form6> form .five6 .img_upload {
+		color: #000000;
+		font-size: 12px;
+		font-weight: normal;
+		cursor: pointer;
+		margin: 10px 0 20px;
+}
+.second6> .container> .form6> form .five6 .browse {
+	padding: 0.1em 0.8em;
+	color: #ffffff;
+	background: #838383;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	display: inline-block;
+	margin-right: 13px;
+	text-transform: capitalize;
+	font-size: 12px;
+	font-weight: bold;
+}
+.second6> .container> .form6> form .five6 label .img-clip {
+	color: #000000;
+	font-size: 14px;
+	font-weight: 600;
+	transform: rotateX(180deg);
+	rotate: -10deg;
+	margin-right: 3px;
+}
+.second6> .container> .form6> form input[type="checkbox"] {
+	margin-right: 15px;
+	background: #ffffff;
+	appearance: none;
+	-webkit-appearance: none;
+	height: 1.5em;
+	width: 1.5em;
+	border-radius: 2px;
+	outline: none;
+	position: relative;
+	border: 1.5px solid #dceef2 ;
+	cursor: pointer;
+} 
+.second6> .container> .form6> form input[type="checkbox"]:after {
+	content: "\2714";
+	color: #ffffff;
+	font-size: 16px;
+	position: absolute;
+	top: -3px;
+	left: 3px;
+}
+.second6> .container> .form6> form input[type="checkbox"]:checked {
+	background-color: #191a39;
+	border: 1.5px solid #191a39;
+	border-radius: 2px;
+}
+.second6> .container> .form6> form .check_set {
+	margin: 10px 0;
+	display: table;
+	position: relative;
+	min-width: 18em;
+}
+.second6> .container> .form6> form .check_set> .confm {
+	position: absolute;
+	top: 5px;
+	left: 30px;
+	cursor: pointer;
+}
+.second6> .container> .form6> form hr {
+	color: #ffffff;
+	width: 98%;
+	height: 3px;
+}
+.second6> .container> .form6> form input[type="submit"] {
+	display: block;
+ 	width: 100px;
+ 	margin: auto;
+ 	color: #4b3985;
+ 	text-transform: capitalize;
+ 	font-size: 14px;
+ 	border: 1.5px solid #574fa4;
+ 	border-radius: 3px;
+ 	padding: 8px 20px;
+ 	font-weight: bold;
+ 	outline: 0;
+ 	margin-top: 20px;
+}
+
+/*--------------------select -------------------------*/
+.second6> .container> .form6> form .custom-arrow> select {
+	border: 0;
+	height: 100%;
+	margin: 0;
+	border: 1.5px solid #ebebeb;
+
+}
+.second6> .container> .form6> form .custom-arrow{
+	position: relative;
+
+}
+.second6> .container> .form6> form .custom-arrow> .set-pointer {
+	display: block;
+	width: 60px;
+	height: 100%;
+	background: #ffffff;
+	color: red;
+	position: absolute;
+	top: 0;
+	right: 5%;
+	pointer-events: none;
+	border-radius: 4px;
+	border-right: 1.5px solid #ebebeb;
+	border-top: 1.5px solid #ebebeb;
+	border-bottom : 1.5px solid #ebebeb;
+	border-top-left-radius: 0; 
+	border-bottom-left-radius: 0;
+
+}
+.second6> .container> .form6> form .custom-arrow> .set-pointer .up {
+	position: absolute;
+	top: 8px;
+	right: 15px;
+	color: #000000;
+	font-size: 16px;
+}

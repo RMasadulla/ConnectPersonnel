@@ -1,0 +1,816 @@
+body {
+	font-family: proximaregular;
+	font-weight: 22;
+	outline: none;
+}
+@font-face {
+	font-family: proximaBold;
+		src: url(fonts/ProximaNovaBold.otf);
+		font-weight: bold;
+}
+@font-face {
+	font-family: proximalight;
+		src: url(fonts/proximanovalight.ttf);	
+}
+@font-face {
+	font-family: proximaregular;
+		src: url(fonts/ProximaNovaRegular.ttf);
+		color: #4f5b60;		
+}
+.container {
+	width: 80%;
+	max-width: 1440px;
+	outline: 0;
+}
+.box {
+	display: grid;
+	height: 100vh;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";	
+}
+/*---------------button------------------*/
+	.button {
+	text-decoration: none;
+	font-family: "proximaBold";
+	font-size: 15px;
+	border: 2px solid #584fa4;
+	border-radius: 3px;
+	padding: 11px 4px;
+	background: transparent;
+	outline: none;
+}
+/*-------------header start -----------------------*/
+header {
+	grid-area: header;
+	background: #ffffff;
+	padding: 20px 0;
+}
+header> .container> .header {
+ 	display: grid;
+ 	grid-template-columns: 1.5fr 4fr;
+ 	grid-template-areas: 
+ 	"logo search"
+ 	;
+ }
+ header> .container> .header> .logo-area {
+ 	grid-area: logo;
+ 	text-align: left;
+ }
+header> .container> .header> .search {
+ 	grid-area: search;
+ 	text-align: right;
+ }
+ header> .container> .header> .logo-area a {
+ 	outline: none;
+ }
+header> .container> .header> .logo-area a img {
+	height: 68px;
+	width: 240px;
+}
+header > .container > .header > .header-right > nav > ul {
+	list-style: none;
+	margin-top: 4%;
+	text-align: right;
+}
+header>  .container> .header> .header-right> nav > ul> li {
+	display: inline;
+}
+header> .container> .header> .header-right> nav> ul> li> a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "proximaBold";
+	font-size: 14px;
+	padding: 5px 14px;
+	margin: 2px;
+	border-radius: 4px;
+	border: 2px solid #615b9b;
+	color: #615b9b;
+	outline: none;
+} 
+header> .container> .header> .header-right> nav> ul> li> a> .file {
+	padding-right: 8px;
+	margin-left: -4px;
+}
+header> .container> .header> .header-right> nav> ul> li> a> .sicon {
+	padding-right: 8px;
+	margin-left: -4px;
+	font-size: 14px;
+}
+header> .container> .header> .header-right> nav> ul> .submenu:hover> a{
+	background: #615b9b;
+	color: #ffffff;
+}
+/*--------------others devices-------------------*/
+.search-h {
+	width: 40px;
+	height: 40px;
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.search-h span {
+	display: block;
+	font-size: 20pt;
+	color: #666699;
+}
+/*------------------nav open-------------*/
+.open-nav-menu {
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.open-nav-menu> span {
+	display: block;
+	width: 35px;
+	height: 3px;
+	background: #666699;
+	position: relative;
+}
+.open-nav-menu> span:before,
+.open-nav-menu> span:after {
+	content: '';
+	width: 100%;
+	height:100%;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	background: #666699;
+}
+.open-nav-menu> span:before {
+	top: -10px;
+}
+.open-nav-menu> span:after {
+	top: 10px;
+}
+/*------------close nav menu -----------*/
+.close-nav-menu {
+	height: 30px;
+	width: 30px;
+	background: red;
+	margin: 0 0 10px 20px;
+	cursor: pointer;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2px;
+}
+.close-nav-menu> span {
+	content: '';
+	width: 25px;
+	height: 2px;
+	background: #ffffff;
+	transform: rotate(50deg);
+}
+.close-nav-menu> span:after {
+	display: block;
+	content: '';
+	width: 25px;
+	height: 2px;
+	background: #ffffff;
+	transform: rotate(-100deg);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.menu-overlay {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+.menu-overlay.active {
+	visibility: visible;
+	opacity: 1;
+}
+/*------------------dropdown search-bar --------*/
+.submenu {
+	position: relative;
+	cursor: pointer;
+}
+.drop-down-bar {
+	display: grid;
+	grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+	grid-template-areas: 
+	"one"
+	"two" 
+	"three"
+	"four";
+	grid-row-gap: .7rem;
+	background: #615b9b;
+	padding: 20px 0;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 999;
+	position: absolute;
+	top: 40px;
+	right: 5px;
+	width: 215px;
+	border-radius: 3px;
+	box-shadow: 0 0 1px #615b9b;
+	transition: all 0.3s ease;
+}
+header> .container> .header> .header-right> nav> ul> .submenu:hover> .drop-down-bar {
+	visibility: visible;
+	opacity: 1;
+	top: 26px;
+}
+.drop-down-bar .done {
+	display: block;
+	width: 90%;
+	margin: auto;
+	height: 35px;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	border-radius: 1px;
+	padding: 0.3em 0.5em;
+	font-weight: bold;
+	font-size: 10pt;
+	text-transform: capitalize;
+
+}
+.drop-down-bar .three {
+	margin-bottom: 10px;
+}
+.drop-down-bar .four {
+	width: 40%;
+	margin: auto;
+	color: #ffffff;
+	background: transparent;
+	font-size: 8pt;
+	font-weight: bold;
+	padding: 0.7em 1.3em;
+	text-transform: capitalize;
+	box-sizing: border-box;
+	border: 1.5px solid #ffffff;
+	border-radius: 3px;
+}
+.drop-down-bar> .custom-arrow> select {
+	border: 0;
+	height: 35px;
+}
+.drop-down-bar> .custom-arrow{
+	position: relative;
+}
+.drop-down-bar> .custom-arrow> .set-pointer {
+	display: block;
+	width: 60px;
+	height: 35px;
+	background: #ffffff;
+	color: red;
+	position: absolute;
+	top: 0;
+	right: 5%;
+	pointer-events: none;
+
+}
+.drop-down-bar> .custom-arrow> .set-pointer .up {
+	position: absolute;
+	top: 9px;
+	right: 10px;
+	color: #1b1740;
+	font-size: 10px;
+}
+.drop-down-bar> .custom-arrow> .set-pointer .down {
+	position: absolute;
+	top: 22px;
+	right: 10px;
+	color: #1b1740;
+	font-size: 10px;
+}
+/*--------------main start here-------------*/
+main {
+	grid-area: main;
+	display: grid;
+	grid-template-areas: 
+	"nav"
+	"first"
+	"second"
+	"third"
+	"fourth"
+	"fifth";
+}
+/*----------navigation start -----------*/
+main> nav {
+	grid-area: nav;
+	background: #1b1740;
+	overflow: hidden;
+}
+main> nav .home-menu {
+	display: grid;
+	grid-template-columns: 1fr 2.5fr 1fr;
+	text-align: center;
+	list-style: none;
+	padding: 0;
+ 	margin: 0;
+}
+main> nav> .container> ul> li> a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #ffffff;
+	margin: 0;
+	padding: 1.2em 0;
+	outline: none;
+	font-family: proximaBold;
+}
+main> nav .home-menu> .list-item> .medical-h:hover {
+	background-color: #73ba9d;
+ } 
+main> nav .home-menu> .list-item> .engineering-h:hover {
+	background-color: #6baac1;
+ }
+main> nav .home-menu> .list-item> .consulting-h:hover {
+	background-color: #6b83c1;
+}
+/*------------------------first section start here------------*/
+:root{
+	--primary: rgba(88, 78,164, .9);
+	--secondary: rgba(32, 25,95, 1);
+}
+.first {
+	background: linear-gradient(to right, var(--primary), var(--secondary)), url('Favicons/Connect_30.png');   
+	background-position-x: -1% ; 
+	background-position-y:  -135%;          
+	background-repeat: no-repeat;
+	grid-area: first;
+	padding: 40px 0;
+	padding-bottom: 70px;
+}
+.first> .container> form {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr .4fr;
+	grid-template-areas: 
+	"one two three four";
+	grid-gap: .5rem;
+}
+.first> .container> form> .done,
+.first> .container> form> .custom-arrow> .two,
+ .first> .container> form > .custom-arrow> .three {
+	text-transform: capitalize;
+	font-family: "proximaBold";
+	font-size: 18px;
+	color: #1b1740;
+	border: 1px solid transparent;
+	border-radius: 1px;
+	background: #ffffff;
+	padding-left: 20px;
+	outline: 0;
+}
+.first> .container> form> .custom-arrow> select {
+	border: 0;
+	height: 100%;
+}
+.first> .container> form> .custom-arrow{
+	position: relative;
+}
+.first> .container> form> .custom-arrow> .set-pointer {
+	display: block;
+	width: 60px;
+	height: 100%;
+	background: #ffffff;
+	color: red;
+	position: absolute;
+	top: 0;
+	right: 0;
+	pointer-events: none;
+}
+.first> .container> form> .custom-arrow> .set-pointer .up {
+	position: absolute;
+	top: 13px;
+	right: 18px;
+	color: #1b1740;
+	font-size: 10px;
+}
+.first> .container> form> .custom-arrow> .set-pointer .down {
+	position: absolute;
+	top: 30px;
+	right: 18px;
+	color: #1b1740;
+	font-size: 10px;
+}
+.first> .container> form> .one {
+	grid-area: one;
+	width: 100%;
+	height: 50px;
+}
+.first> .container> form> .custom-arrow> .two {
+	grid-area: two;
+	width: 100%;
+	padding: 12px 0;	
+	padding-left: 20px;
+}
+.first> .container> form > .custom-arrow> .three {
+	grid-area: three;
+	width: 100%;
+	padding: 12px 0;
+	padding-left: 20px;
+}
+.first> .container> form> .four {
+	grid-area: four;
+}
+.first> .container> form> .add {
+	font-family: "proximaBold";
+	text-transform: capitalize;
+	color: #ffffff;
+	font-size: 15px;
+	border: 2px solid #584fa4;
+	border-radius: 3px;
+	padding: 11px 4px;
+	background: transparent;
+	margin-left: 10px;
+	outline: 0;
+}
+.first> .container> h1 {
+	text-align: center;
+	font-size: 50px;
+	font-family: "proximalight";
+	color: #ffffff;
+	padding-bottom: 20px;
+}
+.first h1> .highlight {
+	font-family: "proximaBold";
+	font-size: 50px;
+}
+/*second section start---------------*/
+.second-h {
+	grid-area: second;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 0.5fr;
+}
+.second-h h3,
+.second-h p {
+	margin: 0;
+	padding: 0;
+}
+.second-h> .photo1> img,
+.second-h> .photo2> img,
+.second-h> .photo3> img {
+	width: 100%;
+	height: 100%;
+}
+.second-h> .details-all {
+	position: relative;
+}
+.second-h> .details-all h3{
+	color: #ffffff;
+	font-size: 17pt;
+	font-family: proximabold;
+	text-transform: uppercase;
+}
+.second-h> .details-all p {
+	font-size: 15pt;
+	color: #ffffff;
+	margin: 23px 0 170px 0;
+	opacity: 0.8;
+}
+.second-h> .details-all a {
+	font-family: "proximaBold";
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 16px;
+	border: 2px solid #ffffff;
+	border-radius: 3px;
+	padding: 8px 10px;
+	background: transparent;
+	position: absolute;
+	bottom: 15%;
+	opacity: 0.9;
+} 
+.second-h> .details-all a:hover {
+	color: #615b9b;
+	background: #ffffff;
+}
+.second-h> .pic-info1 {
+ 	background: #73ba9d;
+ 	padding: 45px 170px 0 35px;
+ }
+ .second-h> .pic-info2 {
+ 	background: #6baac1;
+ 	padding: 45px 8% 0 35px;
+ }
+ .second-h> .pic-info3 {
+ 	background: #6b83c1;
+ 	padding: 45px 10px 0 35px;
+ }
+
+/*third section start-------------*/
+.fourth2 {
+	grid-area: third;
+	background: url("images/whitebg.png"), rgba(245, 244, 252, 1);
+	background-repeat: no-repeat;
+	background-position-y: 20px;
+	background-position-x: -30px;
+	padding: 45px 0  90px 0;
+}
+.fourth2> .container> h3 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	color: #1c1740;
+	font-family: proximabold;
+	margin-bottom: 30px;
+}
+.fourth2> .container .card {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 3rem;
+	grid-template-areas: 
+	"one two three";
+	background: transparent;
+	width: 100%;
+	border: 2px solid transparent;
+}
+.fourth2> .container .card> .addition {
+	border-radius: 5px;
+	padding: 8px 17px 20px;
+	border: 2px solid #f5f4fc;
+	border-radius: 8px;
+	background: #ffffff;
+	margin: 0;
+	transition: all 0.6s ease;
+}
+.fourth2> .container .card> .addition> .up {
+	text-transform: uppercase;
+	font-family: proximabold;
+	font-size: 14px;
+	color: #1c1740;
+}
+.fourth2> .container .card> .addition> h2 {
+	font-family: proximabold;
+	font-size: 20px;
+	color: #615b9b;
+}
+.fourth2> .container .card> .addition> p {
+	color: #505b5f;
+	font-family: proximabold;
+	font-size: 12px;
+	word-spacing: .3em;
+}
+.fourth2> .container .card> .addition> h6 {
+	color: #4e5c5f;
+	font-family: proximaregular;
+	line-height: 1.5em;
+	font-size: 13px
+}
+.fourth2> .container .card> .addition> a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #625c9c;
+	font-family: proximabold;
+	border-bottom: 1px solid #625c9c;
+	outline: 0;
+}
+.c-des-1 {
+	display: inline-block;
+	margin-left: 20px;
+}
+.carousel-indicators {
+	top: 100%;
+}
+.carousel-indicators [data-bs-target] {
+  	width: 10px;
+	height: 10px;
+	border: 1.5px solid #615b9b;
+	border-radius: 50%;
+	outline: none;
+	margin-top: 30px;
+}
+.carousel-indicators [aria-current="true"] {
+	background: #615b9b;
+}
+.carousel-control-prev,
+.carousel-control-next {
+	width: 2%;
+	margin: auto;
+}
+.carousel-control-prev >span, 
+.carousel-control-next >span {
+	background: #1b1740;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 3px 3px;
+}
+/*foruth section start here------------------*/
+.fourth> {
+	grid-area: fourth;
+}
+.fourth> .four {
+	width: 100%;
+	padding-top: 45%;
+	background: url('images/about.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;	
+}
+.fourth> .four> .about {
+	margin: 0;
+	height: 80%;
+	width: 43%;
+	position:absolute;
+	bottom: 8%;
+	right: 0;
+	background: #615b9b;
+	overflow: hidden;
+	color: #ffffff;
+}
+.fourth> .four> .about> .about-of-Content {
+	width: 485px;
+	margin: auto;
+	margin-top: 7%;
+	position: relative;
+}
+.fourth> .four> .about> .about-of-Content h3 {
+	font-size: 30pt;
+	text-transform: capitalize;
+	font-family: proximaregular;
+}
+.fourth> .four> .about> .about-of-Content p {
+	font-size: 11pt;
+	width: 100%;
+}
+.fourth> .four> .about> .about-of-Content a {
+	font-family: "proximaBold";
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 9pt;
+	border: 2px solid #ffffff;
+	border-radius: 3px;
+	padding: .6em 2em;
+	background: transparent;
+	position: absolute;
+	bottom: -20%;
+	opacity: 0.7;
+}
+ /*----------------fifth section start here ------------*/
+.fifth {
+	background: #ffffff;
+	grid-area: fifth;
+	padding: 60px 0;
+}
+.fifth> .container> .suggest {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "into pic";
+}
+.fifth> .container> .suggest> .pic> img {
+	width: 550px;
+	height: 360px;
+	outline: 0;
+}
+.fifth> .container> .suggest> .info {
+	grid-area: into;
+	padding-right: 30px;
+	position: relative;
+}
+.fifth> .container> .suggest> .info h4 {
+	color: #100c29;
+	font-size: 28pt;
+}
+.fifth> .container> .suggest> .info p {
+	font-size: 13pt;
+}
+.fifth> .container> .suggest> .info a {
+	font-family: "proximaBold";
+	text-decoration: none;
+	color: #615b9b;
+	font-size: 11pt;
+	border: 2.2px solid #615b9b;
+	border-radius: 4px;
+	padding: .6em 1em;
+	background: transparent;
+	opacity: .8;
+	position: absolute;
+	top: 85%;
+}
+.fifth> .container> .suggest> .pic {
+	grid-area: pic;
+}
+/*footer start here---------------*/
+footer {
+	background: #100c29;
+	grid-area: footer;
+	padding: 50px 0;
+	padding-bottom: 25px;
+}
+footer> .container> .footer {
+	display: grid;
+	grid-template-columns: 1fr .5fr .7fr;
+	grid-template-areas: " left middle right";
+}
+footer> .container> .footer> .left {
+	grid-area: left;
+}
+footer> .container> .footer> .middle {
+	grid-area: middle;
+	text-align: right;
+}
+footer> .container> .footer> .right {
+	grid-area: right;
+	text-align: right;
+}
+footer> .container> .footer> .left> a> img {
+	width: 260px;
+	height: 69px;
+} 
+footer> .container .left> p {
+	text-transform :uppercase;
+	margin-top: 11%;
+	font-size: 11px;
+	color: #ffffff;
+}
+footer> .container .middle> p,
+footer> .container .last> span,
+footer> .container> .footer> .right> p {
+	color: #ffffff;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	line-height: 1.5em;
+}
+footer> .container .left> p> a{
+	border-bottom: 1px solid #867dbc;
+	color: #867dbc;
+ 	text-decoration: none;
+ 	outline: none;
+}
+footer> .container .middle> a ,
+footer> .container> .footer> .right> a {
+	display: block;
+	margin-bottom: 10px;
+ 	color: #867dbc;
+ 	text-decoration: none;
+ 	outline: none;
+ 	font-size: 14px;
+}
+footer> .container> .footer> .right> .down {
+	display: grid;
+	grid-template-areas: 
+	" before after";
+	justify-content: right;
+	margin-top: 10%;
+	grid-gap: 0.2rem;
+}
+footer> .container> .footer> .right> .down> .last {
+	grid-area: before;
+	margin-right: 13%;
+}
+footer> .container> .footer> .right> .down> .social {
+	grid-area: after;
+}
+footer> .container .social> .icon {
+	color: #ffffff;
+	height: 30px;
+	width: 30px;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	padding: 6px; 
+	margin-left: 1px;
+	font-size: 12px;
+	display: inline-block;
+	text-align: center;
+	outline: 0;
+}
+footer> .container .last> span{
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+footer> .container .last> img {
+	width: 12%;
+	height: auto;
+	padding-bottom: 8%;
+}
+footer> .container .middle> a {
+ 	color: #867dbc;
+ 	text-decoration: none;
+ 	outline: 0;
+}
+footer> .container .mobile {
+	display: none;
+}
+/*responsive------------------------------------------------------------*/
+

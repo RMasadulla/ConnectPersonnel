@@ -1,0 +1,94 @@
+.nine {
+	padding: 20px 0 70px;
+}
+.second8> .container> .one9 h2 {
+	font-size: 27pt;
+	color: #1c173f;
+}
+.second8> .container> .one9 .icon1 {
+	margin-top: 10px;
+}
+.second8> .container> .one9 .icon1 img {
+	display: inline-block;
+	margin: 0 10px 5px 7px;
+	 width: 20px;
+	 height: 20px;
+}
+.second8> .container> .one9 .icon1 .clock {
+	margin: 0 4px 5px 0;
+} 
+
+.second8> .container> .one9 .icon1> span {
+	font-size: 15px;
+	text-transform: capitalize;
+}
+
+.second8> .container> .box8> h3 {
+	font-size: 40pt;
+	font-family: proximabold;
+	text-transform: capitalize;
+	color: #1c173f;
+}
+.second8> .container> hr {
+	color: #c6cacd;
+	height: 2px;
+}
+.second8> .container> .five8 {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-areas: 
+	"left9 right9";
+}
+.second8> .container> .five8> .left9 {
+	grid-area: left9;
+}
+.second8> .container> .five8> .right9 {
+	grid-area: right9;
+	text-align: right;
+}
+.second8> .container> .five8> .left9> .social> ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.second8> .container> .five8> .left9> .social> ul> li {
+	display: inline-block;
+	margin-right: 10px;
+}
+.second8> .container> .five8> .left9> .social> ul> .share {
+	text-transform: uppercase;
+	font-size: 13pt;
+	font-family: proximabold;
+	color: #605b9d;
+	margin-left: 0;
+}
+.second8> .container> .five8> .left9> .social> ul> li> a {
+	display: block;
+	text-decoration: none;
+	height: 35px;
+	width: 35px;
+	color: #605b9d;
+	background: #ffffff;
+	border: 1.5px solid #6c6599;
+	border-radius: 50%;
+	padding-top: 0.5em;
+	padding-left: 0.8em;
+	font-size: 14px;
+	outline: none;
+
+}
+
+.second8> .container> .five8> .right9 a {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #605b9d;
+	background: #ffffff;
+	border: 2px solid #6c6599;
+	border-radius: 3px;
+	padding: 8px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	outline: none;
+	margin-top: 0px;
+}

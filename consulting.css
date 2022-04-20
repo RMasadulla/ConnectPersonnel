@@ -1,0 +1,85 @@
+ /*consulting navigation-----------------*/
+main > nav > .container > ul> .consulting:hover> a{
+	color:#6b83c1!important;
+}
+main > nav > .container > ul > li > .consulting-add {
+	color:#6b83c1!important;
+}
+/*---------first section----------------*/
+.consulting-first> img{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+/*second section--------------*/
+.consulting2> .container> .content> .up h4 {
+	font-size:16pt;
+	color: #1b163e;
+	font-family: proximabold;
+	margin: 20px 0;
+	line-height: 1.3em;
+}
+.consulting2> .container> .content> .up p {
+	margin: 15px 0;
+	line-height: 1.5em;
+}
+/*third section----------*/
+.consulting-third> .person {
+	position: relative;
+}
+.consulting-third> .person> .up, 
+.consulting-third> .person> .down {
+	display: block;
+	height: 17.5%;
+	width: 24.5%;
+	margin: auto;
+	text-align: center;
+	background: #6b83c1;
+	border: 1px solid transparent;
+	border-radius: 4%;
+}
+
+.consulting-third> .person> .up {
+	position: absolute;
+	bottom: 15.5%;
+	left: 25.6%;
+}.consulting-third> .person> .down {
+	position: absolute;
+	bottom: 15.5%;
+	right: 12%;
+}
+.consulting-third> .person img {
+	height: 100%;
+	width: 100%;
+}
+
+.consulting-third> .person> .up> p, 
+.consulting-third> .person> .down> p {
+	text-transform: capitalize;
+	font-size: 23pt;
+	margin: 0;
+	margin-top: 12px;
+	color: #ffffff;
+}
+.consulting-third> .person> .up> a, 
+.consulting-third> .person> .down a {
+	display: block;
+	font-size: 15pt;
+	outline: none;
+	text-decoration: none;
+	color: #ffffff;
+	transition: all 0.3s ease;
+}
+.consulting-third> .person> .up> a i, 
+.consulting-third> .person> .down a i {
+	margin-right: 5px;
+}
+.consulting-third> .person> .up> a:hover, 
+.consulting-third> .person> .down a:hover {
+	color: #1b163e;
+	font-size: 17pt;
+}
+/*fourth section -------*/
+ .consulting-sec {
+ 	background-color: #6b83c1!important;
+ }

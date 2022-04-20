@@ -1,0 +1,123 @@
+.second-ten {
+	padding-top: 40px;
+}
+
+/*---------second-section-----left------------*/
+.left-ten {
+	width: 100%  !important;
+}
+.one10> h5,.two10> h5,.three10> h5 {
+	color: #ffffff;
+	background-color: #4d3885;
+	padding: 0.6em 1em;
+	text-transform: capitalize;
+	font-size: 14pt;
+	font-weight: bold;
+	position: relative;
+	cursor: pointer;
+}
+.one10> h5> .pnt ,.two10> h5> .pnt ,.three10> h5> .pnt {
+	position: absolute;
+	top: 25%;
+	right: 10%;
+	font-weight: bold;
+} 
+.one10> h5{
+	margin-bottom: 0;
+}
+.one10 ul {
+	background-color: #f5f4fc;
+	padding: 0.7em 3em;
+}
+.one10 ul> li> a {
+	list-style: none;
+	color: #19193d;
+	outline: none;
+	font-size: 10pt;
+	text-transform: capitalize;
+	text-decoration: none;
+	line-height: 1.3em;
+	font-weight: normal;
+}
+.one10 ul> li:hover {
+	color: #615b9b;
+	font-weight: bold;
+}
+.one10 ul> li> a:hover {
+	color: #615b9b;
+	font-weight: bold;
+}
+/*---------------second-section----rigth----------------*/
+.right-ten {
+	background-color: #ffffff !important;
+	display: grid; 
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	"one-ten" 
+	"two-ten" 
+	"three-ten" 
+	"four-ten" 
+	"five-ten" 
+	"six-ten";
+	grid-row-gap: 1rem;
+	padding: 10px 0 0 15px !important;
+
+}
+.classification {
+	display: grid;
+	grid-template-columns: 3fr 1.2fr;
+	grid-template-areas: 
+	"before10 after10";
+	background-color: #f5f4fc;
+	padding: 20px 25px 35px;
+	position: relative;
+	margin: 0;
+}
+/*-------------before10---------------------*/
+.before10 {
+	grid-area: before10;
+	border-right: 1px solid #ffffff;
+	border-right-height: 20px;
+}
+.before10> h5 {
+	text-transform: capitalize;
+	color: #19193b;
+	font-size: 16pt;
+	font-weight: bold;
+} 
+.before10> h6 {
+	color: #19193b;
+	font-size: 10pt;
+	line-height: 1.3em;
+	padding-bottom: 20px;
+}
+.before10> .button9 {
+	position: absolute;
+	top: 77%;
+	left: 4%;
+}
+/*------------------after10---------------*/
+.after10 {
+	grid-area: after10;
+}
+.after10> ul {
+	list-style: none;
+} 
+.after10> ul> li {
+	padding-top: 10px;
+} 
+.after10> ul> li> a {
+	text-decoration: none;
+	color: #181937;
+	font-size: 13px;
+	outline: none;
+}
+.after10> ul> li> a> .spn {
+	display: inline-block;
+	margin-right: 13px;
+	color: #615b9b;
+}
+
+.up-ten> ul {
+	margin-top: 35px;
+}

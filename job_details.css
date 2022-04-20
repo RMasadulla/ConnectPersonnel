@@ -1,0 +1,137 @@
+.second9 {
+	padding: 45px 0 60px;
+}
+.second9> .container> .des9 {
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+	grid-template-areas: 
+	" one two";
+}  
+
+/*--------------------- left -----------------*/
+.second9> .container> .des9> .left9 {
+	grid-area: one;
+	width: 95%;
+}
+.second9> .container> .des9> .left9 > ul {
+	list-style: none;
+	padding: initial;
+}
+.second9> .container> .des9> .left9> ul> li> a {
+	display: block;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 10px 25px;
+	outline: none;
+	background-color: #f5f4fc;
+	margin: 3px 0;
+	position: relative;
+	color: #191a39;
+	font-size: 13px;
+	outline: none;
+}
+.second9> .container> .des9> .left9> ul> li> a> .s9 {
+	position: absolute;
+	top: 30%;
+	right: 10%;
+	color: #4d3885;
+	font-size: 16px;
+}
+.second9> .container> .des9> .left9> ul> li> img {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.second9> .container> .des9> .left9> ul> .point9 {
+	position: relative;
+	margin-top: 18px;
+	cursor: pointer;
+} 
+.second9> .container> .des9> .left9> ul> li> .submit9 {
+	text-transform: uppercase;
+	font-family: proximabold;
+	font-size: 22px;
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+	line-height: 1em;
+	position: absolute;
+	top: 60%;
+	left: 5%;
+}
+.second9> .container> .des9> .left9> ul> li> .circle9 {
+	font-family: proximalight;
+	color: #ffffff;
+	display: block;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	font-size: 23px;
+	padding: 0.1em 0.6em;
+	position: absolute;
+	top: 60%;
+	right: 5%;
+}
+
+
+/*-----------right----------------------*/
+.second9> .container> .des9> .right9 {
+	grid-area: two;
+	background-color: #f5f4fc;
+	padding: 15px 30px 60px;
+}
+.second9> .container> .des9> .right9> h4 {
+	text-transform: capitalize;
+	font-family: proximabold;
+	font-size: 32pt;
+	color: #1b1740;
+}
+.second9> .container> .des9> .right9> h5{
+	text-transform: capitalize;
+	font-family: proximaregular;
+	font-size: 26pt;
+	color: #1b1740;
+	margin-top: 20px;
+}
+.second9> .container> .des9> .right9> .ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+} 
+.second9> .container> .des9> .right9> .ul> li {
+	display: inline-block;
+} 
+.second9> .container> .des9> .right9> .ul> li> a {
+	display: block;
+	text-decoration: none;
+	margin: 7px;
+	color: #181937;
+	font-size: 16px;
+	outline: none;
+}
+.second9> .container> .des9> .right9> .ul> li> a> .spn {
+	display: inline-block;
+	margin-right: 13px;
+	color: #615b9b;
+}
+.second9> .container> .des9> .right9> .services9> li,
+.second9> .container> .des9> .right9> p {
+	font-size: 16px;
+	color: #505b5f;
+}
+.second9> .container> .des9> .right9> p {
+	margin-bottom: 20px;
+}
+.button9> a {
+	text-decoration: none;
+	padding: .4em 2em;
+	color: #4e3988;
+	border: 1.5px solid #574fa4;
+	border-radius: 3px;
+	font-size: 13px;
+	margin-right: 10px;
+	outline: none;
+}
+.button9> a:hover {
+	background-color: #615b9b;
+	color: #ffffff;
+}
